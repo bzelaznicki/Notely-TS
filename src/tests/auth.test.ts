@@ -9,7 +9,7 @@ describe('getAPIKey', () => {
 
   it('returns null if authorization header is missing', () => {
     const headers = {};
-    expect(getAPIKey(headers)).not.toBeNull();
+    expect(getAPIKey(headers)).toBeNull();
   });
 
   it('returns null if authorization header does not start with ApiKey', () => {
