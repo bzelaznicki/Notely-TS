@@ -4,6 +4,8 @@ on:
 
 jobs:
   deploy:
+    environment: 
+            name: Notely
     name: Deploy
     runs-on: ubuntu-latest
 
